@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Formulário Resilia</title>
+</head>
+<body id="container">
+  <div class="logo">
+    <h1>RESILIA</h1>
+  </div>
+    <div id="corpo2">
+        <div class="caixaformulario">                
+                <strong>Preencha seus dados abaixo</strong>
+                <form>
+                  <fieldset>
+                    <div class="form">
+                      <div class="form-box">
+                        <label for="input" >Nome Completo *</label>
+                        <input id="nome" type="text" class="form-texto" placeholder="Digite seu nome" required>
+                      </div>
+
+                      <div class="form-box">
+                        <label for="input">E-mail *</label>
+                        <input id="email" type="email" class="form-texto" placeholder="Digite seu e-mail" required>
+                      </div>
+
+                      <div class="form-box">
+                        <label for="input">Celular/WhatsApp *</label>
+                        <input id="tel" type="tel" class="form-texto"  maxlength="15"
+                         pattern="(\d{2})\s*\d{5}-\d{4}" placeholder="(DD) 99999-9999" required>
+                      </div>
+
+                      <div class="form-box">
+                        <label for="input">Data de Nascimento</label>
+                        <input id="data" type="date" class="form-texto" required>
+                      </div>
+
+                      <div class="form-box">
+                        <label for="objetivo">Objetivo<br>
+                            <select class="form-texto" name="objetivo" id="objetivo">
+                                <option value=" ">Selecione Opção</option>
+                                <option value="1">Conseguir um Emprego</option>
+                                <option value="2">Mudar de Carreira</option>
+                                <option value="3">Aprender Programação</option>
+                                <option value="4">Aprender Soft-Skills</option>
+                                <option value="5">Conhecer Profissionais</option>
+                                <option value="6">Ter Mentoria Profissional</option>
+                                <option value="7">Acesso a Comunidade</option>
+                                <option value="8">Outros</option>
+                            </select>
+                        </label>
+                    </div>
+
+                      <div class="form-box">
+                        <p>* Campo Obrigatório</p>
+                      </div>
+                      
+                      <div>
+                        <button type="button" class="botao2" onclick="validar()">Me tornar um Resiliente!</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>       
+        </div>         
+    </div>    
+</body>       
+</html>
+
+<script src="js/formulario.js"></script>
+

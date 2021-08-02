@@ -1,0 +1,148 @@
+/* Estilo pagina inicial */
+
+@font-face{
+    font-family: archivo-semi-bold;
+    src: url('archivo-semi-bold.ttf');
+}
+
+#container{
+	width: 100%;
+    height: 100vh;
+	margin: 0 auto;
+    background: #000;
+    font-family: "archivo-semi-bold", sans-serif;   
+}
+
+#corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.logo{
+    height: 60px;
+    width: 300px;
+    color: #FFD000;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.titulo{
+    color: white;
+    width: 328px;   
+}
+
+.texto{
+    color: white;
+    width: 700px; 
+    height: 120px;
+    text-align: center; 
+    opacity: 0.8;  
+    padding-top: 5px;    
+}
+
+.botao{
+	width: 250px;
+	height: 54px;
+    margin-top: 56px;
+    background-color: #000;	
+	color: #FFD000;
+	border: 1px solid  #FFD000 ;
+    cursor: pointer;
+	border-radius:10px;	
+	position: relative;
+	transition-duration: 0.6s;    
+}
+
+.botao:hover{
+    background-color: #FFD000;
+	color: #000;	
+    transform:scale(1.40);	
+}
+ 
+
+/* Estilo Formulário */
+
+#corpo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 5px; */
+    padding-bottom: 5px;   
+}
+
+.caixaformulario {
+    border-radius: 10px;  
+    height: auto;
+    width: 450px;
+    padding: 25px 15px;
+    text-align: center;
+    color: #2f2f2f;
+    font-size: 14px;
+    background-color: #000;
+    border: 3px solid #FFD000;
+}
+  
+.caixaformulario strong{
+    color: #eeecec;
+    display: block;
+    font-size: 27px;
+    padding-bottom: 10px;
+       
+}
+  
+.form {
+    padding: 0 20px;
+}
+  
+.form-box{
+    text-align: left;
+
+}
+  
+.form-box p{
+    font-size: 12px;
+    color: #eeecec;
+}
+
+.form-box label{
+    color: #eeecec;
+}
+  
+.form-texto{
+    border-radius: 5px;
+    border: 0;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f5f4f4;  
+    color: #575555;  
+}
+  
+.botao2{
+    width: 200px;
+    height: 54px;
+    margin-top: 10px;
+    background-color: #FFD000;
+    color: #000;
+    cursor: pointer;
+    border-radius:10px;	
+    border:none;
+    position: relative;
+    transition-duration: 0.5s;    
+}
+  
+.botao2:hover{
+    background-color: #000;	
+    color: #FFD000;
+    border: 1px solid  #FFD000 ;
+    transition: all 0.5s;
+}
+
+
+
+   
